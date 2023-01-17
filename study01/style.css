@@ -1,0 +1,107 @@
+/*css reset*/
+body, h1, h2, p {
+  margin: 0;
+}
+
+h1, h2, strong {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*layout*/
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 50px 0;
+}
+
+/*commons*/
+.button {
+  color: #3379ff;
+  border: 1px solid;
+  border-radius: 7px;
+  font-size: 10px;
+  padding: 0 20px;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+/*design*/
+body {
+  background-color: #3379ff;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  color: #b9d1ff;
+  font-size: 45px;
+  padding-bottom: 50px;
+  display: none;
+}
+
+.title strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.grid {
+  margin: 0 -10px;
+}
+
+.grid-item {
+  width: 50%;
+  color: #000;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: -85px;
+  aspect-ratio: 16/11;
+}
+
+/*
+item 사이 공간을 띄우는 다른 방법
+width: cals(50%-10px);
+*/
+
+.grid-item:nth-of-type(even) {
+  margin-left: auto;
+  text-align: right;
+}
+
+.grid-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.grid-item .year {
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #696969;
+  line-height: 1.6;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+.grid-item .year h2 {
+  font-size: 45px;
+  color: #85afff;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: -4px;
+}
+
+.grid-item .year p {
+  font-size: 11px; 
+  width: 80%;
+  margin: 20px 0 40px;
+  display: inline-block;
+}
+

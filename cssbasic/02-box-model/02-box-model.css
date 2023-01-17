@@ -1,0 +1,40 @@
+.item {
+  background-color: orange;
+  width: 50%;
+}
+
+.item:nth-child(even) {
+  margin-left: auto;
+}
+
+.year {
+  padding: 40px
+}
+
+/*
+2
+.item {
+  background-color: orange;
+  padding: 40px;
+}
+
+.item:nth-child(odd) {
+  margin-left: 50%;
+}
+
+.item:nth-child(even) {
+  margin-right: 50%;
+}
+
+3
+.item {
+  background-color: orange;
+  padding: 40px;
+  width: calc( 50% - 80px );
+  - 양 옆으로 공간이 띄워져 있어야 한다
+}
+
+.item:nth-child(even) {
+  margin-left: auto;
+}
+*/

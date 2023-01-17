@@ -1,0 +1,176 @@
+/*css reset*/
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*layoyt*/
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*design*/
+body {
+  color: #fff;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: #0263a6;
+}
+
+.header-logo {
+  margin: 40px 0;
+}
+
+.header-wave {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+}
+
+.header-menu {
+  background-color: #0490d2;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+}
+
+.header-menu li a {
+  display: block;
+  padding: 20px;
+}
+
+.header-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-menu li a.active {
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 40px;
+}
+
+.contents {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.contents.last {
+  border: none;
+  padding: 0; 
+  margin: 0;
+}
+
+.contents .text .title {
+  color: #0490d2;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 3px 0 10px;
+}
+
+.contents .text p {
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.container .sidebar {
+  width: 170px;
+  flex-shrink: 0;
+}
+
+.container .sidebar .list {
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: 600;
+  border-left: 2px solid #ccc;
+  padding: 2px 7px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3px;
+}
+
+.footer {
+  background-color: #333;
+}
+
+.footer-inside {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  padding: 30px 0 20px;
+}
+
+.footer-inside .copy {
+  display: flex;
+  gap: 50px;
+}
+
+.copy .link h2 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.copy .link a {
+  display: block;
+  font-size: 12px;
+}
+
+.copy .link .sns {
+  display: flex;
+  gap: 5px;
+}
+
+.copy .link .sns a {
+  width: 30px;
+  height: 30px;
+  background-image: url(images/icon-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  text-indent: -40px;
+  overflow: hidden;
+}
+
+.copy .link .sns a.facebook {
+  background-position: -30px 0;
+}
+
+.copy .link .sns a.p {
+  background-position: -60px 0;
+}
+
